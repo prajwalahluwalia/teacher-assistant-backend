@@ -1,0 +1,10 @@
+"""
+URL configuration for api app.
+"""
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    path('', views.home, name='api-home'),
+    path('health/', views.health, name='api-health'),
+]
